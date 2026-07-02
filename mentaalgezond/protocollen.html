@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behandelprotocollen – Mentaal Gezond</title>
+  <meta name="description" content="Behandelprotocollen voor psychosomatische klachten, ademhaling en functionele neurologische stoornissen. Voor ouders leesbaar, voor therapeuten klinisch onderbouwd." />
+  <style>
+    @font-face { font-family: 'Inter'; src: url('fonts/inter-v20-latin-regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+    @font-face { font-family: 'Inter'; src: url('fonts/inter-v20-latin-600.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+    @font-face { font-family: 'Inter'; src: url('fonts/inter-v20-latin-700.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #2A9D8F; --teal-light: #E8F5F4; --teal-dark: #1f7a6e;
+      --navy: #264653; --navy-dark: #1a2f38;
+      --grey-bg: #F8F9FA; --grey-border: #E8ECF0;
+      --text: #264653; --text-muted: #6B7A7E; --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; font-size: 16px; color: var(--text); background: var(--grey-bg); line-height: 1.6; }
+    header { background: var(--white); border-bottom: 1px solid var(--grey-border); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo img { height: 48px; width: 48px; object-fit: contain; border-radius: 10px; }
+    .logo-text { font-weight: 700; font-size: 1rem; color: var(--navy); }
+    .logo-text span { color: var(--teal); }
+    .terug { color: var(--teal); text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+
+    .hero { background: linear-gradient(135deg, #2A9D8F 0%, #52B788 50%, #264653 100%); position: relative; color: white; padding: 48px 24px 40px; text-align: center; }
+    .hero::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.25); }
+    .hero-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 12px; text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    .hero p { opacity: 0.9; font-size: 0.95rem; line-height: 1.7; }
+
+    .content { max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px; }
+    .protocol-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    .protocol-kaart { background: var(--white); border: 1px solid var(--grey-border); border-radius: 14px; padding: 24px; transition: all 0.2s; text-decoration: none; color: inherit; display: block; }
+    .protocol-kaart:hover { border-color: var(--teal); box-shadow: 0 4px 16px rgba(42,157,143,0.12); transform: translateY(-2px); }
+    .protocol-kaart .tag { display: inline-block; font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--teal-light); color: var(--teal); margin-bottom: 10px; }
+    .protocol-kaart h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .protocol-kaart p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.55; }
+    .binnenkort-melding { text-align: center; padding: 80px 24px; color: var(--text-muted); }
+    .binnenkort-icon { font-size: 3.5rem; margin-bottom: 16px; }
+    .binnenkort-titel { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+
+    footer { background: var(--navy-dark); color: rgba(255,255,255,0.4); text-align: center; padding: 24px; font-size: 0.78rem; }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="LogoMentaleGezondheid.jpeg" alt="Mentaal Gezond" />
+      <div class="logo-text"><span>Mentaal</span> Gezond</div>
+    </a>
+    <a href="index.html" class="terug">← Terug naar home</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Behandelprotocollen</h1>
+    <p>Onze expertteams schrijven en onderhouden behandelprotocollen op basis van de laatste wetenschappelijke inzichten. Elk protocol is beschikbaar in een leesbare versie voor patiënten en een klinische versie voor therapeuten.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div id="protocol-container">
+    <div class="binnenkort-melding">
+      <div class="binnenkort-icon">📚</div>
+      <div class="binnenkort-titel">Protocollen in ontwikkeling</div>
+      <p>Onze expertteams werken aan de eerste behandelprotocollen voor psychosomatische klachten, ademhaling en FNS. Deze verschijnen hier binnenkort automatisch.</p>
+    </div>
+  </div>
+</div>
+
+<footer><p>© 2026 Mentaal Gezond · <a href="index.html">Home</a> · <a href="privacy.html">Privacyverklaring</a> · Onderdeel van het <a href="https://vindjefysio.net">VindJeFysio Netwerk</a></p></footer>
+
+<script>
+// Laadt protocollen-config.json en toont protocol-tegels zodra er protocollen zijn
+fetch('protocollen-config.json')
+  .then(r => r.json())
+  .then(config => {
+    const protocollen = config.protocollen || [];
+    if (protocollen.length === 0) return; // Houd "binnenkort" melding
+    const container = document.getElementById('protocol-container');
+    container.innerHTML = '<div class="protocol-grid">' + protocollen.map(p => `
+      <a href="protocollen/${p.slug}.html" class="protocol-kaart">
+        <span class="tag">${p.categorie || 'Protocol'}</span>
+        <h3>${p.titel}</h3>
+        <p>${p.omschrijving || ''}</p>
+      </a>`).join('') + '</div>';
+  })
+  .catch(() => {}); // Config bestaat mogelijk nog niet — geen probleem
+</script>
+</body>
+</html>
