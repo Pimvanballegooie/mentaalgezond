@@ -65,7 +65,7 @@
     .disc-knop.actief .disc-avatar { background: rgba(255,255,255,0.25); color: var(--white); }
 
     /* ZOEKBALK */
-    .zoek-balk { display: flex; gap: 8px; background: var(--grey-bg); border: 2px solid var(--grey-border); border-radius: 12px; padding: 6px; margin-bottom: 12px; transition: border-color 0.2s; }
+    .zoek-balk { display: flex; gap: 8px; background: var(--grey-bg); border: 2px solid var(--grey-border); border-radius: 12px; padding: 6px; margin-bottom: 12px; transition: border-color 0.2s; position: relative; }
     .zoek-balk:focus-within { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(42,157,143,0.12); }
     .zoek-input { flex: 1; padding: 10px 14px; border: none; background: transparent; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--text); outline: none; }
     .zoek-scheiding { width: 1px; background: var(--grey-border); margin: 4px 0; flex-shrink: 0; }
@@ -148,6 +148,14 @@
       .hamburger { display: flex; }
       nav { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 12px 16px 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-top: 1px solid var(--grey-border); }
       nav.open { display: flex; }
+
+      /* Zoekbalk verticaal stapelen op mobiel */
+      .zoek-balk { flex-direction: column; gap: 6px; }
+      .zoek-input, .zoek-locatie-input { width: 100%; flex: none; }
+      .zoek-scheiding { display: none; }
+      .zoek-btn-inline { width: 100%; }
+      .zoek-wis { position: absolute; right: 14px; top: 14px; align-self: auto; }
+      .zoek-kaart { padding: 20px 16px; }
     }
   </style>
 </head>
