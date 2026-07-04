@@ -1,3 +1,13 @@
 {
-  "protocollen": []
+  "protocollen": [
+    {
+      "id": "functionele-neurologische-stoornis-fns",
+      "naam": "Functionele Neurologische Stoornis (FNS)",
+      "zone": "fns",
+      "niveaus": {
+        "makkelijk": "1YK7o2P37BBcKMoZEpygWnUUkkdRFAdW2jo_tnLQlvhc",
+        "complex":   "16MVTutSPaOQ34OV_N0h_sR9mrTlKzgWfYdkowUJbTQ4"
+      }
+    }
+  ]
 }
