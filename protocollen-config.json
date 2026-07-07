@@ -1,12 +1,13 @@
 {
   "protocollen": [
     {
-      "slug": "functionele-neurologische-stoornis-fns",
-      "titel": "Functionele Neurologische Stoornis (FNS)",
-      "categorie": "Psychosomatiek",
-      "omschrijving": "Behandelprotocol voor functionele neurologische stoornis (FNS) voor fysiotherapeuten en andere paramedici, met een aparte uitleg voor patiënten.",
-      "doc_id_ouders": "1YK7o2P37BBcKMoZEpygWnUUkkdRFAdW2jo_tnLQlvhc",
-      "doc_id_therapeuten": "16MVTutSPaOQ34OV_N0h_sR9mrTlKzgWfYdkowUJbTQ4"
+      "id": "functionele-neurologische-stoornis-fns",
+      "naam": "Functionele Neurologische Stoornis (FNS)",
+      "zone": "fns",
+      "niveaus": {
+        "makkelijk": "1YK7o2P37BBcKMoZEpygWnUUkkdRFAdW2jo_tnLQlvhc",
+        "complex":   "16MVTutSPaOQ34OV_N0h_sR9mrTlKzgWfYdkowUJbTQ4"
+      }
     }
   ]
 }
