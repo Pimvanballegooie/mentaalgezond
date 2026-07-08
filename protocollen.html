@@ -84,12 +84,16 @@ fetch('protocollen-config.json')
     const protocollen = config.protocollen || [];
     if (protocollen.length === 0) return; // Houd "binnenkort" melding
     const container = document.getElementById('protocol-container');
-    container.innerHTML = '<div class="protocol-grid">' + protocollen.map(p => `
-      <a href="protocollen/${p.slug}.html" class="protocol-kaart">
-        <span class="tag">${p.categorie || 'Protocol'}</span>
-        <h3>${p.titel}</h3>
+    container.innerHTML = '<div class="protocol-grid">' + protocollen.map(p => {
+      const slug = p.slug || p.id;
+      const titel = p.titel || p.naam;
+      return `
+      <a href="protocollen/${slug}.html" class="protocol-kaart">
+        <span class="tag">${p.categorie || p.zone || 'Protocol'}</span>
+        <h3>${titel}</h3>
         <p>${p.omschrijving || ''}</p>
-      </a>`).join('') + '</div>';
+      </a>`;
+    }).join('') + '</div>';
   })
   .catch(() => {}); // Config bestaat mogelijk nog niet — geen probleem
 </script>
