@@ -434,7 +434,7 @@ def header_html(teruglink_label='← Alle protocollen', teruglink_url='../protoc
     <nav>
       <a href="{teruglink_url}">{teruglink_label}</a>
       <a href="{root_pad}index.html#zoeken">Zoeken</a>
-      <a href="https://vindjefysio.net/therapeut-aanmelden.html" class="cta">Aanmelden</a>
+      <a href="{root_pad}therapeut-aanmelden.html" class="cta">Aanmelden</a>
     </nav>
   </div>
 </header>'''
