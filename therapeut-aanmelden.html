@@ -402,6 +402,7 @@ async function verstuurAanmelding() {
         bio: document.getElementById('bio').value.trim(),
         disciplines,
         code: gecontroleerdePraktijk ? document.getElementById('praktijk-code').value.trim().toUpperCase() : '',
+        aangemeld_via: 'mentaalgezond.net',
         actief: false
       })
     });
